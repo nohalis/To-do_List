@@ -1,0 +1,63 @@
+body {
+  background-image: url(../img/imagen-fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+}
+body::before {
+  content: "";
+  background-image: url(../img/imagen-fondo2.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.caja-tareas {
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px 30px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+}
+
+.tabla th,
+.tabla td {
+  padding: 0.5rem;
+  border: 0.1rem solid grey;
+}
+
+.tabla td.id-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabla td.checkbox-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabla th {
+  background-color: #f0f0f0;
+}
+
+.detalle-general {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabla {
+  margin-top: 20px;
+  margin-left: 130px;
+}
